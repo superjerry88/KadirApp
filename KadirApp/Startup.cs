@@ -36,5 +36,6 @@ namespace KadirApp
 
             app.UseMvc();
         }
+           
     }
 }

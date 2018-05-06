@@ -12,6 +12,20 @@ namespace KadirApp
 {
     public class Program
     {
+
+        /*
+         *  public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
+
+            //Accept All HTTP Request Methods from all origins
+            app.UseCors(builder =>
+                builder.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+
+            app.UseMvc();
+        }
+         */
         public static void Main(string[] args)
         {
 //            var host = new WebHostBuilder()
@@ -30,5 +44,6 @@ namespace KadirApp
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .Build();
+    
     }
 }
